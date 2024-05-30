@@ -1,74 +1,158 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- This is a title and a favicone -->
     <title>Data Science Project</title>
     <link rel="icon" type="image/x-icon" href="/img/Logo250.png">
 
     <!-- This is a stylesheet and bootstrap grid -->
-    <link rel="Stylesheet" href="css/style.css">
     <link rel="Stylesheet" href="css/bootstrap-grid.css">
-  
-    
+    <link rel="Stylesheet" href="css/style.css">
+
+
     <!-- These are fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- These are icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-HuCKNKtLLvUsW3t4KtXL5PbQ+tXp/+Ez+/VxmjrjrwjDj9F1LwhaqDRFvPbu9lX3" crossorigin="anonymous"> 
     
-    <!-- These are icons --> 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-HuCKNKtLLvUsW3t4KtXL5PbQ+tXp/+Ez+/VxmjrjrwjDj9F1LwhaqDRFvPbu9lX3" crossorigin="anonymous"> -->
     <!-- <a href="https://www.freepik.com/icons/instagram">Icon by edt.im</a> -->
 </head>
 
 <body>
-    <header>
-        <nav> 
-            <div class="menu">
-                    <a href="https://datascienceproject.eu/" target="_blank"> Home </a>
-                    <a href="https://datascienceproject.eu/blog/" target="_blank">Blog</a>
-                    <a href="https://datascienceproject.eu/blog/about-this-project/" target="_blank"> About </a>
-                    <a href="https://help.datascienceproject.eu/doc/" target="_blank">Gitbook</a>
-            </div> 
-
-             <div class="social-icons">
-
-                    <a href="https://www.instagram.com/datascienceproject.eu/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i>Instagram</a>
-                    <a href="https://www.youtube.com/@datascienceproject" target="_blank" class="social-icon"><i class="fab fa-youtube"></i>YouTube</a>
-                    <a href="https://github.com/DataScienceProjectEU" target="_blank" class="social-icon"><i class="fab fa-github"></i>GitHib</a>
-            </div> 
-        </nav>
     
+    <!-------------------------- NAV ----------------------------->
+    <nav>
 
-        <div class="container-main">
-            <div class="row">
-                    <div class="col left-col">
-                        <h1>DATA SCIENCE PROJECT</h1>
-                        <h5>A journey towards data science</h5>
-                    </div>
-
-                    <div class="col right-col">
-                        <div class="photo-section">
-                            <img src="img/logo500.png" alt="Placeholder Photo">
-                        </div>
-                    </div>
+        <!----------- LEFT MENU --------------->
+            <div class="menu-left">
+                <a href="https://datascienceproject.eu/"> Home </a>
+                <a href="https://datascienceproject.eu/blog/"> Blog </a>
             </div>
-        </div>
-                
-    </header>
-
-
-    <main>
 
         
-    </main>
+        
+
+        <!----------- RIGHT (SOCIAL) MENU --------------->
+            <div class="social-icons">
+
+                <a href="https://www.instagram.com/datascienceproject.eu/" target="_blank" class="social-icon">
+                    <img src="img/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@datascienceproject" target="_blank" class="social-icon">
+                    <img src="img/icons/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://github.com/DataScienceProjectEU" target="_blank" class="social-icon">
+                    <img src="img/icons/github.png" alt="GitHub">
+                </a>
+
+                <!-- <div class="search-bar">
+
+                    <a href="#" class="search-icon" onclick="toggleSearch()">
+                        |
+                    </a>
+                    
+                    <a href="#" class="search-icon" onclick="toggleSearch()">
+                        <img src="img/icons/find.png" alt="Search">
+                    </a>
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button onclick="search()">Search</button>
+                
+                </div>
+                <div id="searchResults"></div>
+            
+                <script>
+                    function toggleSearch() {
+                        var searchInput = document.getElementById("searchInput");
+                        searchInput.style.display = (searchInput.style.display === "none") ? "block" : "none";
+                    }
+            
+                    function search() {
+                        var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+                        var paragraphs = document.getElementsByTagName("p");
+                        var searchResults = [];
+            
+                        for (var i = 0; i < paragraphs.length; i++) {
+                            var text = paragraphs[i].innerText.toLowerCase();
+                            if (text.includes(searchTerm)) {
+                                searchResults.push(paragraphs[i].innerHTML);
+                            }
+                        }
+            
+                        displayResults(searchResults);
+                    }
+            
+                    function displayResults(results) {
+                        var searchResultsDiv = document.getElementById("searchResults");
+                        searchResultsDiv.innerHTML = "";
+            
+                        if (results.length === 0) {
+                            searchResultsDiv.innerHTML = "No results found.";
+                        } else {
+                            for (var i = 0; i < results.length; i++) {
+                                searchResultsDiv.innerHTML += "<p>" + results[i] + "</p>";
+                            }
+                        }
+                    }
+                </script> -->
 
 
 
+            </div>
+    </nav>
+        
+    <!-------------------------- HEADER -------------------------->
+    <header>
+            <h1>DATA SCIENCE PROJECT</h1>
+            <p>A journey towards data science</p>
+
+    </header>
+
+    <!-------------------------- MAIN ---------------------------->
+    <main>
+        
+        
+
+        <img src="img/titanic500.png" alt="Titanic">
+        
+        <img src="img/house500.png" alt="House">
+        <img src="img/spaceship500.png" alt="Spaceship">
+
+        <div class="message-1">
+            <p>Don't you think, that today’s world is way more complicated 
+                than the one our parents lived in? 
+                But also - so fascinating. Let's explore it! 
+                Together.</p>
+
+        </div>
+
+        <!-- <p>Titanic - Machine Learning from Disaster</p>
+        <p>House Prices - Advanced Regression Techniques</p>
+        <p>Spaceship Titanic</p>
+
+        <div class="message-2">
+            <p>Design information pipeline</p>
+            <p>To conquer any domain we need to start with absorbing as much information as possible. From books, podcasts, tutorials, social media content, groups - you get the point, right?
+
+                So let’s start with creating an information pipeline adjusted to our needs. I’ve already created separate e-mail, Chrome browser, social media accounts - all the steps I’m describing in this article. </p>
+            <img src="img/woman-and-screens (700 x 700 px).png" alt="Pipeline">
+        </div> -->
 
 
-    <footer></footer>
+
+    </main> 
+    
+    <!-------------------------- FOOTER -------------------------->
+    <footer>
+        <div class="social-icons"></div>
+        <p>All rights reserved | DataScienceProject.eu 2024</p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,105 @@
+/* html {
+    height: 100%;
+} */
+
+/* body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    line-height: 21px;
+    /* background-image: linear-gradient(to left, #546FB7, #F49E5F, #98B1C2); */
+    /* background-color: #0093E9; */
+    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);  */
+/* } */
+
+/*h1, h2, h3, h4 {
+    font-family: 'Oswald', serif;
+    /* font-family: 'Merriweather', serif} */
+
+
+/* -------------------------- TOP PART OF THE WEBSITE -------------------------- */
+
+/* header {
+    background-color: #BCCED1;
+    height: 42px;
+    padding: 1px 1px 1px 1px; /* Top, Right, Bottom, Left 
+    font-size: 14px;}*/
+
+
+
+    /* 
+nav {
+    background-color: #BCCED1;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* align-items: center;
+    padding: 0px 0px 0px 0px } */
+
+
+/* 
+.menu a {
+    margin-right: 7px; /* Default margin between menu items */
+}
+
+.social-icons {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #1b1b1b;
+}
+
+
+
+
+h1 {
+    font-size: 72px;
+    letter-spacing: 2px;
+    line-height: 72px;
+    text-align: center; /* Aligns text to the center */
+
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center; /* Aligns text to the center */
+    color: #404040;
+
+}
+
+.container-main {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+
+.left-col {
+    background-color: aquamarine;
+}
+
+.right-col {
+    background-color: rgb(255, 168, 127);
+}
+
+.photo-section {
+    float: right; /* Floats the image to the right */
+}
+
+
+main {
+    background-color: #ffffff;
+    /* height: 600px; */
+}
+
+footer {
+    background-color: #FAF9F7;
+    height: 100px;
+} */
