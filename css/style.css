@@ -72,25 +72,36 @@ nav {
     margin-left: auto;
 }
 
-        /* -------------------------- MENU -------------------------- */
+        /* -------------------------- LEFT MENU -------------------------------------------- */
         .menu-left {
             display: flex;
             align-items: center;
             margin-left: 5px;
-            /* margin-right: auto; */
         }
-
-        .social-icons {
-            display: flex;
-            align-items: center;
-            padding: 7px;
-        }
-
 
         .menu-left a  {
             text-decoration: none;
             color: #404040;
             margin-left: 15px;
+        }
+
+    
+        .menu-left a:visited {
+            color: #404040;
+        }
+
+        .menu-left a:last-child {
+            margin-right: 0; /* Usuwa odstęp po ostatnim linku w każdym menu */
+        }
+
+
+
+        /* -------------------------- SOCIAL ICONS - RIGHT MENU ---------------------------- */
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            gap:8px;  /*Odstęp między ikonami */
         }
 
         .social-icons a {
@@ -99,7 +110,7 @@ nav {
 
         }
 
-        .menu-left a:visited, .social-icons a:visited {
+       .social-icons a:visited {
             color: #404040;
         }
 
@@ -107,12 +118,37 @@ nav {
             margin-right: 0; /* Usuwa odstęp po ostatnim linku w każdym menu */
         }
 
-        .social-icon img {
-            width: 19px; /* Dostosuj wielkość ikony */
-            height: auto; /* Automatycznie dostosuj wysokość do proporcji obrazu */
-            margin-right: 10px;
-        
+        /* -------------------------- SINGLE ICON -------------------------- */
+
+       
+        .social-icon {
+            /* background-color: white; */
+            border-radius: 50%; /* Zaokrąglenie krawędzi, aby utworzyć okrąg */
+            width: 18px; /* Szerokość kontenera ikony */
+            height: auto;
+            transition: transform 0.5s ease-in-out; /* Dodanie płynnej animacji */
         }
+        
+        
+        .social-icon img {
+            display: inline-block;
+            /* width: 18px;  Szerokość kontenera ikony */
+            width: 90%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out; /* Dodanie płynnej animacji */
+            background-size: cover; /* Dopasowanie tła do kontenera */
+            background-position: center; /* Centrowanie tła */
+        }
+
+
+
+
+        .social-icon:hover {
+            transform: scale(1.4); /* Powiększenie ikony o 20% po najechaniu kursorem */
+            transform: translateY(-5px); /* Przesunięcie ikony w górę o 5px po najechaniu kursorem */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Zwiększenie cienia po najechaniu kursorem */
+}
+        
 
 
 /* -------------------------- HEADER -------------------------- */
@@ -164,34 +200,29 @@ main img {
 
 /* -------------------------- FOOTER -------------------------- */
 
-.ccontainer-footer {
-    margin-right: auto;
-    margin-left: auto;
-
+footer {
+    background-color: #FAF9F7;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wycentrowanie w pionie */
+    justify-content: space-between; /* Rozmieszczenie treści */
+    
 }
 
-footer {
-    
-    margin-top:auto; /* Pozycjonuje stopkę na dole strony */
-    
-    background-color: #FAF9F7;
-    color: #404040;
-    padding: 20px;
-    text-align: center;
+.social-icons2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Wycentrowanie w pionie */
+    justify-content: space-between; /* Rozmieszczenie treści */
 
+    gap:10px;  /*Odstęp między ikonami */
+    margin: 10px;
+}
+
+p {
+    text-align: center; /* Wycentrowanie tekstu */
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
-
-}
-
-.social-icons2 img {
-    margin: 5px;
-    padding: 5px;
-}
-
-.social-icons2 a {
-    text-decoration: none;
-    color: #404040;
-
 }
