@@ -14,13 +14,8 @@ html {
 }
 
 body {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
 
     margin: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 
     /* Fonts */
@@ -39,7 +34,7 @@ h1 {
     letter-spacing: 2px;
     color: black;
     padding: 0px;
-    margin:0;
+    margin: 0px 0px 15px 0px;
 }
 
 /* .container {
@@ -52,69 +47,72 @@ h1 {
 
 /* -------------------------- NAV -------------------------- */
 nav {
-    /* background-color: #BCCED1; */
+    /* background-image: linear-gradient(160deg, #546FB7 0%, white 100%); */
+    background-color: #A4B2D9;
+    height: 50px;
     
-    background-image: linear-gradient(160deg, #546FB7 0%, white 100%);
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px; 
+}
+
+.container-nav {
+    height: 50px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    flex-direction: row;
+    font-size: 14px;  
 }
 
 
-
 .menu-left {
-    /* margin-left: auto; */
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 .social-icons {
     margin-left: auto;
-    /* margin-right: auto; */
 }
 
-.menu-left, .social-icons {
-    /* background-color: white; */
-    display: flex;
-    align-items: center;
-    padding: 15px 15px 15px 15px;
-}
+        /* -------------------------- MENU -------------------------- */
+        .menu-left {
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            /* margin-right: auto; */
+        }
 
-.menu-left a  {
-    text-decoration: none;
-    color: #404040;
-    margin-right: 20px;
-}
+        .social-icons {
+            display: flex;
+            align-items: center;
+            padding: 7px;
+        }
 
-.social-icons a {
-    text-decoration: none;
-    color: #404040;
-    margin-right: 5px;
 
-}
+        .menu-left a  {
+            text-decoration: none;
+            color: #404040;
+            margin-left: 15px;
+        }
 
-.menu-left a:visited, .social-icons a:visited {
-    color: #404040;
-}
+        .social-icons a {
+            text-decoration: none;
+            color: #404040;
 
-.menu-left a:last-child, .social-icons a:last-child {
-    margin-right: 0; /* Usuwa odstęp po ostatnim linku w każdym menu */
-}
+        }
 
-.social-icon img {
-    width: 20px; /* Dostosuj wielkość ikony */
-    height: auto; /* Automatycznie dostosuj wysokość do proporcji obrazu */
-   
-}
+        .menu-left a:visited, .social-icons a:visited {
+            color: #404040;
+        }
 
-.search-icon img {
-    width: 20px; /* Dostosuj wielkość ikony */
-    height: auto;
-    margin-left: 30px;
-}
+        .menu-left a:last-child, .social-icons a:last-child {
+            margin-right: 0; /* Usuwa odstęp po ostatnim linku w każdym menu */
+        }
 
-.search-bar input {
-        display: none; /* Ukryj pole wyszukiwania na początku */
-    }
+        .social-icon img {
+            width: 19px; /* Dostosuj wielkość ikony */
+            height: auto; /* Automatycznie dostosuj wysokość do proporcji obrazu */
+            margin-right: 10px;
+        
+        }
 
 
 /* -------------------------- HEADER -------------------------- */
@@ -133,12 +131,15 @@ header {
 
 
 /* -------------------------- MAIN -------------------------- */
+
+.container-main {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 00px 0px 50px 0px;
+}
 main {
     margin-top:auto;
-    background-image: linear-gradient(160deg, #546FB7 0%, white 100%);
-    
-    /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    #546FB7 */
     padding: 10px;
     color: white;
     text-align: center;
@@ -163,8 +164,16 @@ main img {
 
 /* -------------------------- FOOTER -------------------------- */
 
+.ccontainer-footer {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
 footer {
+    
     margin-top:auto; /* Pozycjonuje stopkę na dole strony */
+    
     background-color: #FAF9F7;
     color: #404040;
     padding: 20px;
@@ -173,5 +182,16 @@ footer {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
+
+}
+
+.social-icons2 img {
+    margin: 5px;
+    padding: 5px;
+}
+
+.social-icons2 a {
+    text-decoration: none;
+    color: #404040;
 
 }
