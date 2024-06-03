@@ -10,7 +10,8 @@
     <title>Data Science Project</title>
     <link rel="icon" type="image/x-icon" href="/img/Logo250.png">
 
-    <!-- This is a stylesheet and bootstrap grid -->
+    <!-- This is a Eric Mayers CSS reset file, bootstrap grid and my own style sheet -->
+    <!-- <link rel="Stylesheet" href="css/css-reset.css"> -->
     <link rel="Stylesheet" href="css/bootstrap-grid.css">
     <link rel="Stylesheet" href="css/style.css">
 
@@ -29,8 +30,10 @@
     
     <!-------------------------- NAV ----------------------------->
     <nav>
-
-        <!----------- LEFT MENU --------------->
+       
+        
+        
+            <!----------- LEFT MENU --------------->
             <div class="menu-left">
                 <a href="https://datascienceproject.eu/"> Home </a>
                 <a href="https://datascienceproject.eu/blog/"> Blog </a>
@@ -39,7 +42,7 @@
         
         
 
-        <!----------- RIGHT (SOCIAL) MENU --------------->
+            <!----------- RIGHT (SOCIAL) MENU --------------->
             <div class="social-icons">
 
                 <a href="https://www.instagram.com/datascienceproject.eu/" target="_blank" class="social-icon">
@@ -52,68 +55,22 @@
                     <img src="img/icons/github.png" alt="GitHub">
                 </a>
 
-                <!-- <div class="search-bar">
-
-                    <a href="#" class="search-icon" onclick="toggleSearch()">
-                        |
-                    </a>
-                    
-                    <a href="#" class="search-icon" onclick="toggleSearch()">
-                        <img src="img/icons/find.png" alt="Search">
-                    </a>
-                    <input type="text" id="searchInput" placeholder="Search...">
-                    <button onclick="search()">Search</button>
-                
-                </div>
-                <div id="searchResults"></div>
-            
-                <script>
-                    function toggleSearch() {
-                        var searchInput = document.getElementById("searchInput");
-                        searchInput.style.display = (searchInput.style.display === "none") ? "block" : "none";
-                    }
-            
-                    function search() {
-                        var searchTerm = document.getElementById("searchInput").value.toLowerCase();
-                        var paragraphs = document.getElementsByTagName("p");
-                        var searchResults = [];
-            
-                        for (var i = 0; i < paragraphs.length; i++) {
-                            var text = paragraphs[i].innerText.toLowerCase();
-                            if (text.includes(searchTerm)) {
-                                searchResults.push(paragraphs[i].innerHTML);
-                            }
-                        }
-            
-                        displayResults(searchResults);
-                    }
-            
-                    function displayResults(results) {
-                        var searchResultsDiv = document.getElementById("searchResults");
-                        searchResultsDiv.innerHTML = "";
-            
-                        if (results.length === 0) {
-                            searchResultsDiv.innerHTML = "No results found.";
-                        } else {
-                            for (var i = 0; i < results.length; i++) {
-                                searchResultsDiv.innerHTML += "<p>" + results[i] + "</p>";
-                            }
-                        }
-                    }
-                </script> -->
-
-
-
             </div>
+
+
+
+        </div>
     </nav>
-        
+    
+    
+    
     <!-------------------------- HEADER -------------------------->
     <header>
             <h1>DATA SCIENCE PROJECT</h1>
             <p>A journey towards data science</p>
 
     </header>
-
+    
     <!-------------------------- MAIN ---------------------------->
     <main>
         
@@ -153,6 +110,7 @@
         <div class="social-icons"></div>
         <p>All rights reserved | DataScienceProject.eu 2024</p>
     </footer>
-</body>
 
+</div>
+</body>
 </html>
